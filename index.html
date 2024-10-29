@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Busca CEP</title>
+</head>
+<body>
+    <main class="principal">
+        <form method="POST" name="cadastro" class="formulario">
+            <h1 class="titulo">Cadastro</h1>
+
+            <div class="wrapper_input">
+                <input onblur="buscaCep()" id="cep" type="text" placeholder="Digite seu CEP" />
+                <span class="bar"></span>
+                <span class="cep_error">CEP inválido</span>
+            </div>
+
+            <div class="wrapper_input">
+                <input id="rua" type="text" placeholder="Rua" />
+                <span class="bar"></span>
+            </div>
+
+            <div class="wrapper_input">
+                <input id="bairro" type="text" placeholder="Bairro" />
+                <span class="bar"></span>
+            </div>
+
+            <div class="wrapper_input">
+                <input id="cidade" type="text" placeholder="Cidade" />
+                <span class="bar"></span>
+            </div>
+
+            <button type="button">Cadastrar</button>
+        </form>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
